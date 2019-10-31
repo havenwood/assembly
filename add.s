@@ -3,11 +3,9 @@
         section .text
 _add:
         push    rbp             ; create stack frame
-        mov     eax, edi        ; move first argument
-        mov     edx, esi        ; move second argument
-        xor     eax, eax        ; reuse eax
-        add     eax, edi        ; add first arg
-        add     eax, esi        ; add second arg
+        mov     eax, edi        ; get first argument
+        mov     edx, esi        ; get second argument
+        add     eax, esi        ; add second argument to first
         pop     rbp             ; restore base pointer
 
         ret                     ; return from procedure
