@@ -2,4 +2,4 @@
 
 require_relative 'assembly'
 
-puts Assembly.add(42, 45)
+puts Assembly.add(123456789101112, 121110987654321)

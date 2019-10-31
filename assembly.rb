@@ -8,5 +8,5 @@ module Assembly
 
   dlload File.expand_path 'add.so', __dir__
 
-  extern 'int add(int, int)'
+  extern 'long add(long, long)'
 end
